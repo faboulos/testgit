@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kerawa.app.Drug_store_list"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:textAppearance="@style/Toolbar.TitleText"
+        android:text=""
+        android:id="@+id/statusText"
+        android:minHeight="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape2"
+        android:textColor="#77000000"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/errore"
+        android:visibility="gone" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:minHeight="50dp"
+        android:weightSum="100"
+        android:id="@+id/linearLayout8"
+        android:background="#eeeeee">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/region"
+            android:layout_weight="50" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue_kerawa" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/cities"
+            android:layout_weight="50" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue_kerawa"
+        android:layout_below="@+id/linearLayout8"
+        android:id="@+id/linearLayout10" />
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/drugstores_list"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/linearLayout10" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bg_anim"
+        android:background="@android:color/transparent"
+        android:id="@+id/loader2"
+        android:layout_gravity="bottom|center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/linearLayout8"/>
+
+</RelativeLayout>

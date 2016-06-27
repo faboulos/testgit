@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.kerawa.app.Health_services">
+    <item
+        android:id="@+id/health"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="kerawa"
+        android:icon="@drawable/icone"
+        tools:ignore="AppCompatResource" />
+</menu>

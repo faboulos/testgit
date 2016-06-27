@@ -1,0 +1,1111 @@
+{
+  "id": 1450685003,
+  "data": [
+    {
+      "region": "ADAMAOUA",
+      "ville": "Banyo",
+      "nom": "PHARMACIE DU MAYO BANYO",
+      "localisation": "Banyo: ",
+      "telephone": [
+        699522477,
+        695209701
+      ]
+    },
+    {
+      "region": "ADAMAOUA",
+      "ville": "Ngaoundere",
+      "nom": "PHARMACIE LA VINA ",
+      "localisation": "Ngaoundéré: ",
+      "telephone": [
+        222251468
+      ]
+    },
+    {
+      "region": "ADAMAOUA",
+      "ville": "Ngaoundere",
+      "nom": "PHARMACIE GRAND MARCHE NGAOUNDERE",
+      "localisation": "Ngaoundéré: ",
+      "telephone": [
+        222157844,
+        699100554
+      ]
+    },
+    {
+      "region": "ADAMAOUA",
+      "ville": "Ngaoundere",
+      "nom": "PHARMACIE DE LA GARE NGAOUNDERE",
+      "localisation": "Ngaoundéré: ",
+      "telephone": [
+        222251688,
+        694010145
+      ]
+    },
+    {
+      "region": "ADAMAOUA",
+      "ville": "Ngaoundere",
+      "nom": "PHARMACIE DE L'ENTENTE",
+      "localisation": "Ngaoundéré: ",
+      "telephone": [
+        222198051
+      ]
+    },
+    {
+      "region": "ADAMAOUA",
+      "ville": "Ngaoundere",
+      "nom": "PHARMACIE DE L'ESPERANCE",
+      "localisation": "Ngaoundéré: ",
+      "telephone": [
+        222251176
+      ]
+    },
+    {
+      "region": "ADAMAOUA",
+      "ville": "Ngaoundere",
+      "nom": "PHARMACIE ADAMA",
+      "localisation": "Ngaoundéré: ",
+      "telephone": [
+        242252464
+      ]
+    },
+    {
+      "region": "ADAMAOUA",
+      "ville": "Ngaoundere",
+      "nom": "PHARMACIE CARREFOUR AOUDI",
+      "localisation": "Ngaoundéré: ",
+      "telephone": [
+        233080848,
+        677716493
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Bafia",
+      "nom": "PHARMACIE AIDA",
+      "localisation": "Bafia: ",
+      "telephone": [
+        222285770,
+        695050110
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Bafia",
+      "nom": "PHARMACIE DE BAFIA",
+      "localisation": "Bafia:",
+      "telephone": [
+        222285404,
+        695116524
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Mbalmayo",
+      "nom": "PHARMACIE DE VIMLI",
+      "localisation": "Mbalmayo:",
+      "telephone": [
+        222048538,
+        222281052
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Mbalmayo",
+      "nom": "PHARMACIE DU NYONG",
+      "localisation": "Mbalmayo: ",
+      "telephone": [
+        697405436
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Mbalmayo",
+      "nom": "PHARMACIE PATIENCE",
+      "localisation": "Mbalmayo: ",
+      "telephone": [
+        222281756
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Mbandjock",
+      "nom": "PHARMACIE DES CANNES",
+      "localisation": "Mbandjock: ",
+      "telephone": [
+        222236830
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Mbankomo",
+      "nom": "PHARMACIE CAMERIC",
+      "localisation": "Mbankomo: ",
+      "telephone": [
+        679795079
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Obala",
+      "nom": "PHARMACIE AFAMBA NOUVELLE GESTION",
+      "localisation": "Obala: lieu",
+      "telephone": [
+        222206848
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Obala",
+      "nom": "PHARMACIE D'OBALA",
+      "localisation": "Obala:",
+      "telephone": [
+        222285678,
+        677639826
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Obala",
+      "nom": "PHARMACIE DE L'AFAMBA PLUS",
+      "localisation": "Obala: ",
+      "telephone": [
+        222206848
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Obala",
+      "nom": "PHARMACIE SAINT THOMAS",
+      "localisation": "Obala: ",
+      "telephone": [
+        699685935
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Sa-a",
+      "nom": "PHARMACIE DE LA RENAISSANCE",
+      "localisation": "Sa'a: ",
+      "telephone": [
+        677982076
+      ]
+    },
+    {
+      "region": "CENTRE",
+      "ville": "Sa-a",
+      "nom": "PHARMACIE DE SA'A",
+      "localisation": "Sa'a:",
+      "telephone": [
+        222285877,
+        677919191
+      ]
+    },
+    {
+      "region": "EST",
+      "ville": "Abong-mbang",
+      "nom": "PHARMACIE DE L'ESPERANCE",
+      "localisation": "Abong-Mbang: ",
+      "telephone": [
+        698009672
+      ]
+    },
+    {
+      "region": "EST",
+      "ville": "Batouri",
+      "nom": "ORIENT PHARMACY",
+      "localisation": "Batouri: ",
+      "telephone": [
+        242635633
+      ]
+    },
+    {
+      "region": "EST",
+      "ville": "Garoua-boulai",
+      "nom": "PHARMACIE DE LA FRONTIÈRE",
+      "localisation": "Garoua-Boula",
+      "telephone": [
+        699223299,
+        "ï"
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Kousseri",
+      "nom": "PHARMACIE AL MARKAZ",
+      "localisation": "Kousseri: ",
+      "telephone": [
+        222294082,
+        242172488
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Kousseri",
+      "nom": "PHARMACIE DU CHARI",
+      "localisation": "Kousseri:",
+      "telephone": [
+        222294080,
+        675254301
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Kousseri",
+      "nom": "PHARMACIE QUSSUR",
+      "localisation": "Kousseri: ",
+      "telephone": [
+        675086908
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maga",
+      "nom": "PHARMACIE DE MAGA",
+      "localisation": "Maga:",
+      "telephone": [
+        699519059
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maroua",
+      "nom": "PHARMACIE DE MAROUA",
+      "localisation": "Maroua:",
+      "telephone": [
+        222293314
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maroua",
+      "nom": "PHARMACIE DOMAYO SARL",
+      "localisation": "Maroua: ",
+      "telephone": [
+        699598483
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maroua",
+      "nom": "PHARMACIE DU BOULEVARD",
+      "localisation": "Maroua:",
+      "telephone": [
+        222293231
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maroua",
+      "nom": "PHARMACIE DU CENTRE MAROUA",
+      "localisation": "Maroua:",
+      "telephone": [
+        222291209
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maroua",
+      "nom": "PHARMACIE DU SAHEL",
+      "localisation": "Maroua: Avenu du renouveau  ",
+      "telephone": [
+        222291656
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maroua",
+      "nom": "PHARMACIE EMERAUDE",
+      "localisation": "Maroua: Quartier Kakatare",
+      "telephone": [
+        696297396
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maroua",
+      "nom": "PHARMACIE EXTREME NORD",
+      "localisation": "Maroua:",
+      "telephone": [
+        222291240
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maroua",
+      "nom": "PHARMACIE FERNGO",
+      "localisation": "Maroua:",
+      "telephone": [
+        222291543
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Maroua",
+      "nom": "PHARMACIE KALIAO",
+      "localisation": "Maroua: ",
+      "telephone": [
+        222293259
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Yagoua",
+      "nom": "PHARMACIE DU BON SECOURS",
+      "localisation": "Yagoua: ",
+      "telephone": [
+        222202519,
+        677736882
+      ]
+    },
+    {
+      "region": "EXTREME-NORD",
+      "ville": "Yagoua",
+      "nom": "PHARMACIE DU MAYO DANAY",
+      "localisation": "Yagoua: ",
+      "telephone": [
+        222296520
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Edea",
+      "nom": "PHARMACIE AMBRE EDEA",
+      "localisation": "Edea: ",
+      "telephone": [
+        222040144
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Edea",
+      "nom": "PHARMACIE ARC EN CIEL",
+      "localisation": "Edea: ",
+      "telephone": [
+        233464132,
+        699948305
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Edea",
+      "nom": "PHARMACIE DU PEUPLE EDEA",
+      "localisation": "Edea:   ",
+      "telephone": [
+        233146179
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Loum",
+      "nom": "PHARMACIE DE LOUM",
+      "localisation": "Loum:",
+      "telephone": [
+        233493545,
+        699532791
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Mbanga",
+      "nom": "PHARMACIE DE MBANGA",
+      "localisation": "Mbanga:",
+      "telephone": [
+        699754755
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Mbanga",
+      "nom": "PHARMACIE NOVA MACK",
+      "localisation": "Mbanga:",
+      "telephone": [
+        243774695,
+        677667337
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Melong",
+      "nom": "PHARMACIE DE MELONG",
+      "localisation": "Melong: "
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Nkongsamba",
+      "nom": "PACIFIC PHARMACY",
+      "localisation": "Nkongsamba:",
+      "telephone": [
+        233492426,
+        677702631
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Nkongsamba",
+      "nom": "PHARMACIE DU TEMPLE",
+      "localisation": "Nkongsamba: ",
+      "telephone": [
+        233491615,
+        674458573
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Nkongsamba",
+      "nom": "PHARMACIE MANENGOUBA",
+      "localisation": "Nkongsamba:",
+      "telephone": [
+        233493003
+      ]
+    },
+    {
+      "region": "LITTORAL",
+      "ville": "Nkongsamba",
+      "nom": "PHARMACIE PRINCIPALE",
+      "localisation": "Nkongsamba: ",
+      "telephone": [
+        233491211
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Figuil",
+      "nom": "PHARMACIE DU CARREFOUR",
+      "localisation": "Figuil:",
+      "telephone": [
+        222275697,
+        679621430
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE ASSALAM",
+      "localisation": "Garoua: ",
+      "telephone": [
+        242171279,
+        677185397
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE CARREFOUR BARMARI",
+      "localisation": "Garoua: ",
+      "telephone": [
+        677925415
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE DE GAROUA",
+      "localisation": "Garoua:",
+      "telephone": [
+        222272478
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE DE L'AMITIE",
+      "localisation": "Garoua: ",
+      "telephone": [
+        222272586
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE DE L'ETOILE",
+      "localisation": "Garoua: ",
+      "telephone": [
+        222271377
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE DE LA GRANDE MOSQUÉE",
+      "localisation": "Garoua: ",
+      "telephone": [
+        222272704
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE DE NGONG",
+      "localisation": "Garoua:",
+      "telephone": [
+        670576740
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE DU CENTRE GAROUA",
+      "localisation": "Garoua:",
+      "telephone": [
+        222273310
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE DU LAMIDAT",
+      "localisation": "Garoua: ",
+      "telephone": [
+        222272261
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Garoua",
+      "nom": "PHARMACIE DU NORD",
+      "localisation": "Garoua: ",
+      "telephone": [
+        222271379
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Guider",
+      "nom": "PHARMACIE DE L'ESPOIR",
+      "localisation": "Guider: ",
+      "telephone": [
+        222275049
+      ]
+    },
+    {
+      "region": "NORD",
+      "ville": "Touboro",
+      "nom": "PHARMACIE DE TOUBORO",
+      "localisation": "Touboro: ",
+      "telephone": [
+        699369270
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "CORPORATE PHARMACY",
+      "localisation": "Bamenda:",
+      "telephone": [
+        233095456
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "FAMILY PHARMACY",
+      "localisation": "Bamenda:",
+      "telephone": [
+        233362426,
+        699875069
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "GRACE PHARMACY LIMITED",
+      "localisation": "Bamenda: ",
+      "telephone": [
+        673470181
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "KAREM PHARMACY",
+      "localisation": "Bamenda: ",
+      "telephone": [
+        233363009,
+        695265259
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "MEZAM PHARMACY",
+      "localisation": "Bamenda:",
+      "telephone": [
+        233362208,
+        677769099
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "MILLENIUM PHARMACY",
+      "localisation": "Bamenda:",
+      "telephone": [
+        233363749,
+        677645960
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "NOBLE PHARMACY",
+      "localisation": "Bamenda:",
+      "telephone": [
+        233052395
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "PARK PHARMACY",
+      "localisation": "Bamenda:",
+      "telephone": [
+        233363712,
+        699376205
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "PHARMACIE AMEN",
+      "localisation": "Bamenda: ",
+      "telephone": [
+        233361185,
+        677544161
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Bamenda",
+      "nom": "PHARMACIE ANDREG PHARMACY",
+      "localisation": "Bamenda: ",
+      "telephone": [
+        233362331,
+        677647199
+      ]
+    },
+    {
+      "region": "NORD-OUEST",
+      "ville": "Mbengwy",
+      "nom": "LIBERTY PHARMACY",
+      "localisation": "Mbengwy:",
+      "telephone": [
+        677505013,
+        677684152
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Bafang",
+      "nom": "PHARMACIE ANDRE DJONGOUE",
+      "localisation": "Bafang: ",
+      "telephone": [
+        233486951,
+        699580125
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Bafang",
+      "nom": "PHARMACIE DU MARCHE BAFANG",
+      "localisation": "Bafang:  ",
+      "telephone": [
+        233486528,
+        699283573
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Bafang",
+      "nom": "PHARMACIE MOUANKEU",
+      "localisation": "Bafang:",
+      "telephone": [
+        233487056,
+        699817875
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Bagangte",
+      "nom": "PHARMACIE DE L'ESPOIR",
+      "localisation": "Bagante: ",
+      "telephone": [
+        233484593,
+        699559134
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Bagangte",
+      "nom": "PHARMACIE DE LA DIGNITÉ",
+      "localisation": "Bagangte: ",
+      "telephone": [
+        233489127,
+        677742563
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Bandja",
+      "nom": "PHARMACIE LE VRAI MEDICAMENT",
+      "localisation": "Bandja:",
+      "telephone": [
+        677659262
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Bandjoun",
+      "nom": "PHARMACIE DU KOUNG-KHI",
+      "localisation": "Bandjoun:",
+      "telephone": [
+        699784198
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Bandjoun",
+      "nom": "PHARMACIE NEW TODJOM",
+      "localisation": "Bandjoun:",
+      "telephone": [
+        699821112
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Dschang",
+      "nom": "PHARMACIE DE LA MENOUA",
+      "localisation": "Dschang: ",
+      "telephone": [
+        233451193,
+        677771595
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Dschang",
+      "nom": "PHARMACIE DE LAH",
+      "localisation": "Dschang: ",
+      "telephone": [
+        233451279,
+        677812085
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Dschang",
+      "nom": "PHARMACIE DU CENTRE",
+      "localisation": "Dschang:",
+      "telephone": [
+        233451194,
+        699989886
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Dschang",
+      "nom": "PHARMACIE DU MARCHE",
+      "localisation": "Dschang:  ",
+      "telephone": [
+        233452137,
+        699966127
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Dschang",
+      "nom": "PHARMACIE PERVENCHE PLUS",
+      "localisation": "Dschang: ",
+      "telephone": [
+        233451739
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Foumban",
+      "nom": "PHARMACIE CENTRALE",
+      "localisation": "Foumban: ",
+      "telephone": [
+        699451944,
+        699636568
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Foumbot",
+      "nom": "PHARMACIE GRENIER/REPUBLIQUE",
+      "localisation": "Foumbot: ",
+      "telephone": [
+        233446356,
+        699664691
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Mbouda",
+      "nom": "PHARMACIE BIEN ETRE PLUS",
+      "localisation": "Mbouda: ",
+      "telephone": [
+        696927222
+      ]
+    },
+    {
+      "region": "OUEST",
+      "ville": "Mbouda",
+      "nom": "PHARMACIE TOP ETOILE",
+      "localisation": "Mbouda:",
+      "telephone": [
+        233485119,
+        699988236
+      ]
+    },
+    {
+      "region": "SUD",
+      "ville": "Ambam",
+      "nom": "PHARMACIE D'AMBAM ",
+      "localisation": "Ambam: ",
+      "telephone": [
+        699782575
+      ]
+    },
+    {
+      "region": "SUD",
+      "ville": "Ambam",
+      "nom": "PHARMACIE KYE OSSI 3 NATIONS ",
+      "localisation": "Ambam: ",
+      "telephone": [
+        656204030
+      ]
+    },
+    {
+      "region": "SUD",
+      "ville": "Ebolowa",
+      "nom": "PHARMACIE DE LA MVILA",
+      "localisation": "Ebolowa: ",
+      "telephone": [
+        222284910
+      ]
+    },
+    {
+      "region": "SUD",
+      "ville": "Ebolowa",
+      "nom": "PHARMACIE DU BERCAIL",
+      "localisation": "Ebolowa: ",
+      "telephone": [
+        222008737,
+        222660899
+      ]
+    },
+    {
+      "region": "SUD",
+      "ville": "Kribi",
+      "nom": "PHARMACIE DE LA GLOIRE",
+      "localisation": "Kribi: ",
+      "telephone": [
+        233461348,
+        222049791
+      ]
+    },
+    {
+      "region": "SUD",
+      "ville": "Sangmelima",
+      "nom": "PHARMACIE ROSA PARK",
+      "localisation": "Sangmelima: ",
+      "telephone": [
+        222479051
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Buea",
+      "nom": "AMAZING PHARMACY SARL",
+      "localisation": "Buea:",
+      "telephone": [
+        233323224
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Buea",
+      "nom": "COMPASSIONATE HEALTH PHARMACY",
+      "localisation": "Buea:  ",
+      "telephone": [
+        233322566,
+        678772434
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Buea",
+      "nom": "ENAMEN PHARMACY",
+      "localisation": "Buea: ",
+      "telephone": [
+        233322011,
+        677317363
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Buea",
+      "nom": "MOUNTAIN II PHARMACY",
+      "localisation": "Buea:",
+      "telephone": [
+        233322546,
+        243184272
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Buea",
+      "nom": "PHARMACIE SALVATION",
+      "localisation": "Buea: ",
+      "telephone": [
+        233322545,
+        233323088
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Buea",
+      "nom": "WINNER'S PHARMACY",
+      "localisation": "Buea:",
+      "telephone": [
+        233323398
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Kumba",
+      "nom": "CENTRAL PHARMACY",
+      "localisation": "",
+      "telephone": [
+        "                  ",
+        "KUMBA:"
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Kumba",
+      "nom": "KUMBA CITY PHARMACY LTD",
+      "localisation": "Kumba: ",
+      "telephone": [
+        233354582
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Kumba",
+      "nom": "PREMIER PHARMACY",
+      "localisation": "Kumba: ",
+      "telephone": [
+        233354247,
+        677547387
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Likomba",
+      "nom": "CORE PHARMACY",
+      "localisation": "Likomba:",
+      "telephone": [
+        233351609
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Limbe",
+      "nom": "DESTINY PHARMACY",
+      "localisation": "Limbe: ",
+      "telephone": [
+        233612464
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Limbe",
+      "nom": "FAKO ATLANTIC PHARMACY",
+      "localisation": "Limbe: lieu",
+      "telephone": [
+        233332630
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Limbe",
+      "nom": "LIMBE PHARMACY LTD",
+      "localisation": "Limbe: Mile One",
+      "telephone": [
+        233332197
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Limbe",
+      "nom": "MEDICINE SHOPPE PHARMACY",
+      "localisation": "Limbe:",
+      "telephone": [
+        233333073,
+        679677557
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Limbe",
+      "nom": "PRIME PHARMACY",
+      "localisation": "Limbe: ",
+      "telephone": [
+        233332928
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Limbe",
+      "nom": "RAINBOW CHEMISTS",
+      "localisation": "Limbe: ",
+      "telephone": [
+        233332425
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Mutengene",
+      "nom": "PHARMACIE FRIVERALIN",
+      "localisation": "Mutengene: ",
+      "telephone": [
+        699983505
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Muyuka",
+      "nom": "MIDLAND PHARMACY",
+      "localisation": "Muyuka:",
+      "telephone": [
+        670531860
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Muyuka",
+      "nom": "PHARMACIE DU SOURIRE",
+      "localisation": "Muyuka:",
+      "telephone": [
+        699814635
+      ]
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Tiko",
+      "nom": "MUTENGUENE PHARMACY",
+      "localisation": "Tiko:"
+    },
+    {
+      "region": "SUD-OUEST",
+      "ville": "Tiko",
+      "nom": "PHARMACIE FAITH STANDARD",
+      "localisation": "Tiko:",
+      "telephone": [
+        242660121,
+        679737896
+      ]
+    }
+  ]
+}

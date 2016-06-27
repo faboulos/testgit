@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="newrelic">com.newrelic.application_token=AA405c71a7c2a19a69b59aa42f1558b2036787b393</string>
+    <string name="app_name">Kerawa</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello">Hello</string>
+    <string name="search_hint">Type what you are looking for above</string>
+    <dimen name="count">10dp</dimen>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="update">Une nouvelle version de l\'application est disponible </string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="country_title">Country</string>
+    <string name="loader">Loading Kerawa Worldwide</string>
+    <string name="loading_text">Loading Kerawa Worldwide…</string>
+    <string name="title_activity_country_list">Kerawa</string>
+    <string name="country_text">Merci de  choisir le pays dans lequel vous voulez voir les annonces.\n\n Vous pouvez à tout moment changer de pays via le menu. </string>
+    <string name="published">Publié le :</string>
+    <string name="category">Catégorie</string>
+    <string name="blank_space">---</string>
+    <string name="price_title">Prix</string>
+    <string name="call_text">Appeler</string>
+    <string name="sms_text">SMS</string>
+    <string name="email_text">Email</string>
+    <string name="share_text">Partager</string>
+    <string name="text_default">default</string>
+    <string name="country_change_text">Changer de Pays</string>
+    <string name="view_account">Mon compte</string>
+    <string name="logout_text">Deconnexion</string>
+    <string name="user_name">Nom du vendeur</string>
+    <string name="buy_credit">Acheter du credit</string>
+    <string name="hello_login">Connexion</string>
+    <string name="add_ads">Ajouter une annonce</string>
+    <string name="searchlabel">recherche</string>
+    <string name="refresh_drugstores">actualiser la liste</string>
+    <string name="votre_email">Email</string>
+    <string name="votre_numero">Numéro mobile</string>
+    <string name="password">Mot de passe</string>
+    <string name="plustard">Annuler</string>
+    <string name="title_activity_activity_user_account">Compte Utilisateur</string>
+    <string name="generic_server_down">Serveur Hors ligne</string>
+    <string name="generic_error">Il ya un Soucis avec API</string>
+    <string name="no_internet">Vérifiez votre connexion</string>
+    <string name="action_logout">Deconnexion</string>
+    <string name="user_names">Nom ou raison sociale</string>
+    <string name="text_choix_pays">Choisir le pays et la ville de vos annonces</string>
+    <string name="status_text">...</string>
+    <string name="titre_annonce">Titre de l\'annonce</string>
+    <string name="title_activity_login">Se connecter</string>
+    <string name="new_and_register">Nouveau? je m\'inscris</string>
+    <string name="all_counties">Choisir un pays</string>
+    <string name="title_activity_register">Inscription</string>
+    <string name="categories">Catégories</string>
+    <string name="villes">Villes</string>
+    <string name="title_activity_analytics_activity">Analytics</string>
+    <string name="title_activity_blog_">Le blog Kerawa</string>
+    <string name="title_activity_create_ads">createAdsActivity</string>
+    <string name="title_activity_activity_updater">Mise à Jour</string>
+    <string name="text_choix_ville">Choisir une ville</string>
+    <string name="add_file">Ajouter un fichier</string>
+    <string name="ads_save">Enregistrer</string>
+    <string name="title_activity_add_ads">Poster une Annonce</string>
+    <string name="home_text">Accueil</string>
+    <string name="my_ads_text">Mes annonces</string>
+    <string name="banner_ad_unit_id">/6499/example/banner</string>
+    <string name="qr_text">Scanner un Kerawa-code</string>
+    <string-array name="currency_array">
+        <item>FCFA</item>
+        <item>€</item>
+        <item>£</item>
+        <item>$</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="smsDesc"><![CDATA[
+    Vous pouvez contacter l\'annonceur par SMS.\n Merci de lui préciser, pour éviter toute confusion, que l\'annonce a été vue sur <b>Kerawa.com</b>
+    ]]></string>
+
+    <string name="callDesc"><![CDATA[
+    Merci, lorsque vous aurez l\'annonceur, de lui rappeler que vous avez vu l\'annonce sur <b>Kerawa.com</b>
+    ]]></string>
+    <string name="shareDesc">
+        <![CDATA[Ici, vous pouvez partager les annonces à vos contacts sur Facebook, ou dans Whatsapp (à des contacts ou même à des groupes).\n Rappelez leur que l\'annonce provient de <b>Kerawa.com</b>]]>
+    </string>
+
+    <string name="menu_search">search</string>
+    <string name="title_activity_mes_contacts">Mes contacts</string>
+    <string name="title_activity_details_from_share">Details de l\'annonce</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_contact_us">Contacter Kerawa.com</string>
+    <string name="title_activity_drug_store_list">Pharmacies de garde</string>
+    <string name="services_santer">Services de santé</string>
+    <string name="pharmacy_text">Pharmacies de garde</string>
+    <string name="notification_title">Pharmacies de garde</string>
+    <string name="notification_text">Vos pharmacies de garde pour cette journée sont disponibles</string>
+    <string name="undefined">localisation non définie</string>
+    <string name="title_activity_health_services">Services de santé</string>
+    <string name="heath_services">Les services de santé vous permettent d\'accéder en un clic et gratuitement aux services tels que les Pharmacies de garde, les annuaires médicaux, les numéros d\'urgence etc.
+        \nCliquez sur  un élément ci-dessous pour plus de détails</string>
+
+    <!--preproduction test key-->
+    <string name="yes">97d5aeec9296c304634d85cf214308a669ee29f9</string>
+
+    <!--test production key-->
+    <!--<string name="yes">198070ba1cd169e5563829c40b5bcdc9ba220428</string>-->
+
+    <!--final production key-->
+    <!--<string name="yes">b2694c74a1a8357bf6f760314368999bbffb0259</string>-->
+
+    <string name="your_name">Nom ou raison sociale</string>
+    <string name="vote_up">Noter Kerawa.com</string>
+    <string name="title_activity_affiliation">Affiliation</string>
+    <string name="affiliation_text">Gagnez de l\'argent en téléchargeant l\'application Android Kerawa.com.\n
+     Créer votre compte Parrain ci-dessous pour participer.</string>
+    <string name="affiliation_link">(lire la suite…)</string>
+    <string name="save_money">Gagner de l\'argent</string>
+    <string name="ready_aff">Désolé, vous êtes déjà inscrit.</string>
+    <string name="first_string">lgfgwa85PVCDMU8OmkRC1BYmcTcz4HiVFqJtRFFD</string>
+    <string name="second_string">1v2K8zx9WyFWJUhdGivdTw4lYsytSa8DDBv4332K</string>
+    <string name="warning_text">Attention! Les pays ne se sont pas correctement installés. Veuillez cliquer sur le bouton ci-dessous pour mettre à jour. \nSi cela ne marche toujours pas, veuillez vérifier votre accès internet. </string>
+
+    <!--deeplink settings-->
+    <string name="app_share">Invitations des amis</string>
+    <string name="about">About Kerawa</string>
+    <string name="buttonInvite">Invite</string>
+    <string name="invitation_title">Invitations des amis</string>
+    <string name="invitation_deep_link">https//play.google.com/store/apps/details?id=com.kerawa.app</string>
+    <string name="invitation_custom_image">https://lh3.ggpht.com/VOqqJ9cyIfEYIEAe8woCHcKRl00jAKevWqZRTAlLtaiRZDp_ftJK37_O3R3mpiXtE5An=w300</string>
+    <string name="invitation_cta">Install!</string>
+    <string name="google_play_service_error">Google Play Services Error</string>
+    <string name="invitation_subject">Try this great app!</string>
+    <string name="message_procedure">
+        <![CDATA[
+        Dans la fenêtre suivante, vous pourrez sélectionner vos contacts, et leur dire à quel point vous aimez l\'application <b>Kerawa.com</b>. \n Merci d\'avance de nous faire confiance, et surtout, de nous aider à grandir.
+    ]]></string>
+
+    <string name="deep_link_fmt" formatted="false">Deep Link: %s</string>
+    <string name="invitation_id_fmt" formatted="false">Invitation ID: %s</string>
+
+    <string name="sent_invitations_fmt" formatted="false">Sent %d invitations</string>
+    <string name="send_failed">Envoi des invitations annulé</string>
+    <string name="invite_dialog_title">You got an invitation!</string>
+    <string name="invitation_message">
+        L\'appli <b>Kerawa.com</b>, c\'est du tonnerre! Télécharges vite.</string>
+    <!--end of deeplink settings-->
+
+    <string name="ratemessage">Si vous aimez Kerawa.com, SVP, votez pour nous en nous donnant 5 étoiles. Merci du soutien !!!*</string>
+    <string name="rate">Voter</string>
+    <string name="later">Plus tard</string>
+    <string name="title_activity_wrong_version">"    Mauvaise Version"</string>
+
+    <string name="title_activity_search">Search</string>
+    <!--<string name="title_activity_search">SearchActivity</string>-->
+    <string name="pays_number">Votre numero et pays</string>
+    <string name="ville">votre ville</string>
+
+<!-- ======================================================================================================  -->
+<!-- help to do deep linking very easy   -->
+
+    <string-array name="pays">
+        <item>cameroun</item>
+        <item>Congo Brazza</item>
+        <item>Congo Kinshasa</item>
+        <item>Cote d\'ivoire</item>
+        <item>Senegal</item>
+        <item>gabon</item>
+    </string-array>
+
+    <string-array name="pays_id">
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>55</item>
+        <item>68</item>
+    </string-array>
+
+    <string-array name="pays_iso">
+        <item>cm</item>
+        <item>cg</item>
+        <item>cd</item>
+        <item>ci</item>
+        <item>sn</item>
+        <item>ga</item>
+    </string-array>
+
+
+    <string-array name="categories">
+        <item>immobilier</item>
+        <item>automobile</item>
+        <item>emploi</item>
+        <item>services</item>
+        <item>a-vendre</item>
+        <item>mode</item>
+        <item>high-tech</item>
+    </string-array>
+
+    <string-array name="categories_id">
+        <item>12</item>
+        <item>18</item>
+        <item>17</item>
+        <item>129</item>
+        <item>11</item>
+        <item>137</item>
+        <item>124</item>
+    </string-array>
+
+    <string-array name="sub_categories">
+        <item>terrains-a-vendre-ou-a-louer</item>
+        <item>maisons-appartements-a-louer</item>
+        <item>autres-immobilier</item>
+        <item>bureaux-locaux-commerciaux</item>
+        <item>maisons-appartements-a-vendre</item>
+        <item>demandes-d-emploi-cvtheque</item>
+        <item>offres-d-emploi</item>
+        <item>habillement-femme</item>
+        <item>accessoires-de-mode</item>
+        <item>habillement-homme</item>
+        <item>autres-articles-de-mode</item>
+        <item>montres-bijoux-lunettes</item>
+        <item>habillement-enfants</item>
+        <item>telephones-tablettes-tactiles</item>
+        <item>ordinateurs</item>
+        <item>autres-high-tech</item>
+        <item>audio-video</item>
+        <item>consoles-jeux-videos</item>
+        <item>voitures</item>
+        <item>autres-automobile</item>
+        <item>pieces-detachees-accessoires</item>
+        <item>motos</item>
+        <item>evenementiel</item>
+        <item>offres-de-service</item>
+        <item>autres-services</item>
+        <item>recherche-de-services</item>
+        <item>autres-a-vendre</item>
+        <item>mobiliers-decoration</item>
+        <item>electromenager</item>
+    </string-array>
+
+    <string-array name="sub_categories_id">
+        <item>34</item>
+        <item>31</item>
+        <item>122</item>
+        <item>33</item>
+        <item>30</item>
+        <item>74</item>
+        <item>123</item>
+        <item>139</item>
+        <item>141</item>
+        <item>138</item>
+        <item>143</item>
+        <item>142</item>
+        <item>140</item>
+        <item>126</item>
+        <item>134</item>
+        <item>136</item>
+        <item>125</item>
+        <item>135</item>
+        <item>98</item>
+        <item>121</item>
+        <item>101</item>
+        <item>99</item>
+        <item>133</item>
+        <item>130</item>
+        <item>132</item>
+        <item>131</item>
+        <item>127</item>
+        <item>26</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="citiesID">
+        <item>333</item>
+        <item>334</item>
+        <item>335</item>
+        <item>336</item>
+        <item>337</item>
+        <item>338</item>
+        <item>339</item>
+        <item>340</item>
+        <item>341</item>
+        <item>342</item>
+        <item>343</item>
+        <item>344</item>
+        <item>345</item>
+        <item>346</item>
+        <item>556</item>
+        <item>557</item>
+        <item>813</item>
+        <item>952</item>
+
+        <item>347</item>
+        <item>348</item>
+
+
+
+        <item>349</item>
+        <item>350</item>
+        <item>351</item>
+        <item>352</item>
+        <item>353</item>
+        <item>354</item>
+        <item>355</item>
+        <item>356</item>
+        <item>357</item>
+        <item>358</item>
+        <item>951</item>
+
+
+
+        <item>359</item>
+        <item>360</item>
+        <item>361</item>
+        <item>362</item>
+        <item>363</item>
+        <item>364</item>
+        <item>365</item>
+        <item>366</item>
+        <item>367</item>
+
+
+        <item>483</item>
+        <item>484</item>
+        <item>485</item>
+        <item>486</item>
+        <item>487</item>
+        <item>488</item>
+        <item>489</item>
+        <item>490</item>
+        <item>491</item>
+        <item>492</item>
+        <item>493</item>
+        <item>494</item>
+        <item>495</item>
+        <item>496</item>
+        <item>497</item>
+
+
+        <item>618</item>
+        <item>619</item>
+        <item>620</item>
+        <item>621</item>
+        <item>622</item>
+        <item>623</item>
+        <item>624</item>
+        <item>625</item>
+        <item>626</item>
+    </string-array>
+
+    <string-array name="countriesID">
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+
+        <item>41</item>
+        <item>41</item>
+
+
+
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+
+
+
+        <item>43</item>
+        <item>43</item>
+        <item>43</item>
+        <item>43</item>
+        <item>43</item>
+        <item>43</item>
+        <item>43</item>
+        <item>43</item>
+        <item>43</item>
+
+
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+
+
+        <item>68</item>
+        <item>68</item>
+        <item>68</item>
+        <item>68</item>
+        <item>68</item>
+        <item>68</item>
+        <item>68</item>
+        <item>68</item>
+        <item>68</item>
+    </string-array>
+    <string name="title_activity_deep_linking">Kerawa</string>
+    <string name="title_activity_ads_deep_linking">Annonce</string>
+    <string name="title_activity_qr_details">Resultats du Scan</string>
+    <string name="title_activity_version">Version Android</string>
+    <string name="title_activity_dispatch_qr">QR CODES</string>
+
+</resources>

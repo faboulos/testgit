@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Slider</string>
+    <string name="add_account">Créer mon compte</string>
+    <string name="help">Aide</string>
+    <string name="blog_title">Le blog</string>
+    <string name="ok">ok</string>
+    <string name="contact_text">Contacter Kerawa</string>
+    <string name="friend_list_text">Contacts connectés</string>
+    <string name="contact_inviter">Inviter les contacts</string>
+    <string name="board">Tableau de Bord</string>
+    <string name="my_alerts_text">Mes alertes</string>
+    <string name="my_account_text">Mon Compte</string>
+    <string name="detail">Detail</string>
+    <string name="titre_html"><![CDATA[<font color=\"#FFFFFF\">%1$s</font>]]></string>
+    <string name="ville">ville</string>
+    <string name="ttt">JMD Group</string>
+    <string name="ads_content">Contenu de l\'annonce</string>
+    <string name="text_choix_cat">Choisir une catégorie</string>
+    <string name="text_title_subcat">Choisir une sous catégorie</string>
+    <string name="Ville">Ville</string>
+</resources>

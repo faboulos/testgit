@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17dp"
+            android:text="Please tell us what happened?"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="50">
+        <Button
+            android:id="@+id/notAval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="Not Available"
+            android:textColor="#ffffff"
+            android:background="@color/blue_kerawa"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/calldrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="Didn't Pick"
+            android:textColor="#ffffff"
+            android:background="@color/blue_kerawa"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

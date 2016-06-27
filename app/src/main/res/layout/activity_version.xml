@@ -1,0 +1,91 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kerawa.app.VersionActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="A PROPOS DU TELEPHONE  "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/tex1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#2196f3"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:text="Version de l'API: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/tex2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:text="Version android: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/tex3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:text="Version mobile kerawa: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/tex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ff1744"/>
+
+    <TextView
+        android:text="ces informations nous serviront à dissequer les erreurs eventuelles et à les corriger le cas écheant.
+        "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#bdbdbd"
+        android:id="@+id/tex4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

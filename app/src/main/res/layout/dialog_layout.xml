@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue_500"
+    android:id="@+id/scrollView" >
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/status_text"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_margin="3dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/votre_numero"
+        android:hint="@string/votre_email"
+        android:enabled="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#ffffc9ff"
+        android:nestedScrollingEnabled="true"
+        android:linksClickable="false"
+        android:clickable="true"
+        tools:ignore="TextFields"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_margin="5dp"
+        android:hint="@string/password"
+        android:padding="5dp"
+        android:background="#ffbeeeff"
+        android:visibility="visible"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Je suis nouveau?  je m&apos;inscris"
+        android:id="@+id/register_text"
+        android:layout_margin="5dp"
+        android:layout_gravity="right"
+        android:padding="5dp"
+        android:background="#ff28ff46" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_anim"
+        android:background="@android:color/transparent"
+        android:id="@+id/loader2"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="gone" />
+
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#DADADC"
+        android:focusable="false"
+        android:id="@+id/view"/>
+    <ListView
+        android:id="@+id/country_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/view"
+        android:divider="#eee"
+        android:dividerHeight="1dp"
+        android:background="#fff"
+        android:paddingLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp" />
+
+</RelativeLayout>

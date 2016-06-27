@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="2dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/status_text"
+        android:id="@+id/status_text"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:gravity="fill_vertical"
+        android:background="@drawable/shape2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:minHeight="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@drawable/errore"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/horizontalScrollView">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/step_two"
+                android:weightSum="1">
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView" >
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    <GridView
+                        android:gravity="fill_horizontal|center_horizontal"
+                        android:columnWidth="100dp"
+                        android:stretchMode="columnWidth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:id="@+id/image_taker"
+                        android:minHeight="70dp"
+                        android:animateLayoutChanges="false"
+                        android:animationCache="false"
+                        android:longClickable="false"
+                        android:visibility="gone" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#DADADC"
+                    android:focusable="false"
+                    android:id="@+id/view0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/text_choix_cat"
+                    android:id="@+id/textView7"
+                    android:padding="5dp"
+                    android:textColor="#ff040404"
+                    android:layout_marginLeft="5dp" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/categories"
+                    android:spinnerMode="dropdown"
+                    android:layoutMode="clipBounds" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#DADADC"
+                    android:focusable="false"
+                    android:id="@+id/view"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/text_title_subcat"
+                    android:id="@+id/textView12"
+                    android:padding="5dp"
+                    android:textColor="#ff040404"
+                    android:layout_marginLeft="5dp" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/subcat"
+                    android:spinnerMode="dropdown"
+                    android:layoutMode="clipBounds" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_below="@+id/textView2"
+                    android:background="#DADADC"
+                    android:focusable="false"
+                    android:id="@+id/view2"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/titre_annonce"
+                    android:hint="@string/titre_annonce"
+                    android:enabled="true"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="#eeeeee"
+                    android:nestedScrollingEnabled="true"
+                    android:linksClickable="false"
+                    android:clickable="true"
+                    tools:ignore="TextFields"
+                    android:textSize="18sp"
+                    android:phoneNumber="true"
+                    android:inputType="textCapSentences"
+                    android:longClickable="false" />
+
+                <EditText
+                    tools:ignore="TextFields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/description"
+                    android:hint="@string/ads_content"
+                    android:enabled="true"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="#eeeeee"
+                    android:nestedScrollingEnabled="true"
+                    android:linksClickable="false"
+                    android:clickable="true"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/text_choix_pays"
+                        android:id="@+id/intro_text"
+                        android:padding="5dp"
+                        android:textColor="#ff040404"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        tools:ignore="TextFields"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:ems="10"
+                        android:id="@+id/price"
+                        android:hint="@string/price_title"
+                        android:enabled="true"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:background="#eee"
+                        android:nestedScrollingEnabled="true"
+                        android:linksClickable="false"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:phoneNumber="true"
+                        android:layout_gravity="center_horizontal"
+                        android:inputType="number"
+                        android:layout_weight="40" />
+
+                    <Spinner
+                        tools:ignore="TextFields"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:ems="10"
+                        android:id="@+id/price_selector"
+                        android:layout_marginBottom="5dp"
+                        android:layoutMode="opticalBounds"
+                        android:spinnerMode="dropdown"
+                        android:layout_weight="60"
+                        android:layout_gravity="center_vertical|left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/metalinear"></LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/phone1"
+                    android:background="#eeeeee"
+                    android:layout_margin="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/phone2"
+                    android:background="#eeeeee"
+                    android:layout_weight="0.79"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/text_choix_pays"
+                    android:id="@+id/textView9"
+                    android:padding="5dp"
+                    android:textColor="#ff040404"
+                    android:layout_marginLeft="5dp" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/liste_pays"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/text_choix_ville"
+                    android:id="@+id/textView8"
+                    android:padding="5dp"
+                    android:textColor="#ff040404"
+                    android:layout_marginLeft="5dp" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/liste_villes"
+                    android:layout_marginTop="5dp"
+                    android:focusable="false"
+                    android:outlineProvider="bounds"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="submit"/>
+
+            </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

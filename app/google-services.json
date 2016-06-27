@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_id": "kerawa-5f272",
+    "project_number": "645111900107",
+    "name": "kerawa"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645111900107:android:3d8cea6898149a0c",
+        "client_id": "android:kerawa.com",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "kerawa.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645111900107:android:b2772f4b9d8eff14",
+        "client_id": "android:com.kerawa.app",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.kerawa.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645111900107-gg55l3c2enbdos6f5m4t67tn2b14gp38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kerawa.app",
+            "certificate_hash": "F8476CDA7D123AC206FA3ABBF4FB0451B8E290CC"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

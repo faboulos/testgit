@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:id="@+id/content">
+
+
+    <!--<ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageButton"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/splash"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/splash"
+        android:contentDescription="@string/loader"
+        android:visibility="gone" />
+       -->
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/description"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/loading_text"
+        android:id="@+id/chargement"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#ff000000"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bg_anim"
+        android:background="@android:color/transparent"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/logo2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <RelativeLayout style="@style/my_popop"
+        android:id="@+id/the_popop"
+        android:visibility="gone">
+
+        <TextView
+            android:text="@string/warning_text"
+            android:id="@+id/mytext"
+            style="@style/warnin_window"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/refresher"
+            android:src="@drawable/icon_refresh"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="148dp" />
+    </RelativeLayout>
+</RelativeLayout>

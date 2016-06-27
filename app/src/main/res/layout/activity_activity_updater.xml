@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kerawa.app.ActivityUpdater"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:textSize="20sp"
+        android:gravity="top|start|fill"
+        android:id="@+id/textView8" />
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/market"
+            android:id="@+id/button_market"
+            android:gravity="center_vertical|center"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_kerawa"
+            android:src="@drawable/kerawa"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

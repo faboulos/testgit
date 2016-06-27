@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/country_text"
+        android:id="@+id/textView2"
+        android:minHeight="50dp"
+        android:textAlignment="gravity"
+        android:gravity="left|center_horizontal"
+        android:padding="3dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/textView2"
+        android:background="#DADADC"
+        android:focusable="false"
+        android:id="@+id/view"/>
+    <ListView
+        android:id="@+id/country_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/view"
+        android:divider="#eee"
+        android:dividerHeight="1dp"
+        android:background="#fff"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp" />
+
+    <RelativeLayout style="@style/my_popop"
+        android:id="@+id/the_popop"
+        android:visibility="gone">
+
+        <TextView
+            android:text="@string/warning_text"
+            android:id="@+id/mytext"
+            style="@style/warnin_window"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/refresher"
+            android:src="@drawable/icon_refresh"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="148dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

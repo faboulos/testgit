@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:elevation="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="10dp"
+    android:layout_centerVertical="true">
+
+
+    <com.kerawa.app.utilities.ImageAdapterGrid
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_appshare"
+        android:contentDescription="@string/ok"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0691E6"
+        android:textSize="@dimen/abc_action_bar_content_inset_material"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:layout_below="@+id/thumbnail"
+        android:text="title"/>
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/title"/>
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:textColor="@color/text_black_100"
+        android:textSize="12sp"
+        android:layout_below="@+id/price2"/>
+
+    <TextView
+        android:id="@+id/city1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="city"
+        android:textSize="12sp"
+        android:layout_below="@+id/date1"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/ads_id"
+        android:visibility="gone"
+        android:layout_below="@+id/city1"/>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/img_vip"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_alignLeft="@+id/thumbnail"
+        android:layout_alignStart="@+id/thumbnail" />
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_anim"
+        android:background="@android:color/transparent"
+        android:id="@+id/loader"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="bottom|center"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" android:weightSum="100"
+            android:orientation="horizontal"
+            android:id="@+id/top"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:text="@string/villes"
+                android:id="@+id/choix_ville"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="@string/categories"
+                android:id="@+id/choix_de_cat"
+                android:layout_marginTop="0dp"
+                android:drawableLeft="@drawable/ic_categories" />
+        </LinearLayout>
+
+        <ListView
+            android:clickable="true"
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffdbdbdb"
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="true"
+            android:fastScrollEnabled="false"
+            android:fastScrollAlwaysVisible="false"
+            android:layout_below="@+id/top"
+            android:layout_above="@+id/relativeLayout" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:id="@+id/relativeLayout"
+            android:background="@color/blue_500"
+            android:padding="2dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/okButton"
+                android:layout_alignBottom="@+id/searchText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/blue_500"
+                android:src="@drawable/action_search"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentTop="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/searchText"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_toLeftOf="@+id/okButton"
+                android:layout_toStartOf="@+id/okButton"
+                android:gravity="center_vertical|center_horizontal|fill"
+                android:background="#ffffffff"
+                android:hint="Rechercher..."
+                android:padding="3dp"
+                android:layout_margin="2dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

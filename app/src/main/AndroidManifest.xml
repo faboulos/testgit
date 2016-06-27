@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kerawa.app" >
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission
+        android:name="com.kerawa.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.kerawa.app.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:name="android.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".parseSdk.ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/KerawaTheme"
+        tools:ignore="AllowBackup" >
+
+        <!-- add google play service to associate your application to your website -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true"
+            tools:ignore="ExportedReceiver" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".services.ScreenOnOffR"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true"
+            tools:ignore="ExportedReceiver" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <receiver android:name=".services.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".services.AlarmRecieverFinal"
+            android:enabled="true" />
+
+        <service android:name=".services.AlarmService" />
+
+        <!-- activite principale  ou premiere interface de l'application mobile -->
+        <activity
+            android:name=".AdsListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KerawaTheme2" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--&lt;!&ndash; =========================================================================================== &ndash;&gt;
+                &lt;!&ndash; parametrage des deep linking de l'interface d'accueil &ndash;&gt;-->
+
+                <data android:pathPattern="/.*-r40/" />
+                <data android:pathPattern="/.*-r41/" />
+                <data android:pathPattern="/.*-r42/" />
+                <data android:pathPattern="/.*-r43/" />
+                <data android:pathPattern="/.*-r55/" />
+                <data android:pathPattern="/.*-r68/" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="www.preprod.kerawa.com" />
+                <data android:host="preprod.kerawa.com" />
+
+                <!--&lt;!&ndash; Countries &ndash;&gt;-->
+                <data android:pathPrefix="/cote-divoire-r43" />
+                <data android:pathPrefix="/cote-d-ivoire-r43" />
+                <data android:pathPrefix="/cameroun-r40" />
+                <data android:pathPrefix="/gabon-r68" />
+                <data android:pathPrefix="/congo-brazza-r41" />
+                <data android:pathPrefix="/congo-kinshasa-r42" />
+                <data android:pathPrefix="/senegal-r55" />
+
+                <!--&lt;!&ndash; Ville &ndash;&gt;-->
+                <data android:pathPattern="/.*-r40/.*-c.*/" />
+                <data android:pathPattern="/.*-r41/.*-c.*/" />
+                <data android:pathPattern="/.*-r42/.*-c.*/" />
+                <data android:pathPattern="/.*-r43/.*-c.*/" />
+                <data android:pathPattern="/.*-r55/.*-c.*/" />
+                <data android:pathPattern="/.*-r68/.*-c.*/" />
+
+                <!--&lt;!&ndash; categorie &ndash;&gt;-->
+                <data android:pathPattern="/.*-r40/.*-c.*/.*/" />
+                <data android:pathPattern="/.*-r41/.*-c.*/.*/" />
+                <data android:pathPattern="/.*-r42/.*-c.*/.*/" />
+                <data android:pathPattern="/.*-r43/.*-c.*/.*/" />
+                <data android:pathPattern="/.*-r55/.*-c.*/.*/" />
+                <data android:pathPattern="/.*-r68/.*-c.*/.*/" />
+
+                <!--&lt;!&ndash; sous categorie &ndash;&gt;-->
+                <data android:pathPattern="/.*-r40/.*-c.*/.*/.*/" />
+                <data android:pathPattern="/.*-r41/.*-c.*/.*/.*/" />
+                <data android:pathPattern="/.*-r42/.*-c.*/.*/.*/" />
+                <data android:pathPattern="/.*-r43/.*-c.*/.*/.*/" />
+                <data android:pathPattern="/.*-r55/.*-c.*/.*/.*/" />
+                <data android:pathPattern="/.*-r68/.*-c.*/.*/.*/" />
+                <data android:pathPattern="/.*-r40/.*-c.*/automobile" />
+                <data android:pathPattern="/.*-r40/.*-c.*/immobilier" />
+                <data android:pathPattern="/.*-r40/.*-c.*/emploi" />
+                <data android:pathPattern="/.*-r40/.*-c.*/services" />
+                <data android:pathPattern="/.*-r40/.*-c.*/a-vendre" />
+                <data android:pathPattern="/.*-r40/.*-c.*/mode" />
+                <data android:pathPattern="/.*-r40/.*-c.*/high-tech" />
+                <data android:pathPattern="/.*-r41/.*-c.*/automobile" />
+                <data android:pathPattern="/.*-r41/.*-c.*/immobilier" />
+                <data android:pathPattern="/.*-r41/.*-c.*/emploi" />
+                <data android:pathPattern="/.*-r41/.*-c.*/services" />
+                <data android:pathPattern="/.*-r41/.*-c.*/a-vendre" />
+                <data android:pathPattern="/.*-r41/.*-c.*/mode" />
+                <data android:pathPattern="/.*-r41/.*-c.*/high-tech" />
+                <data android:pathPattern="/.*-r42/.*-c.*/automobile" />
+                <data android:pathPattern="/.*-r42/.*-c.*/immobilier" />
+                <data android:pathPattern="/.*-r42/.*-c.*/emploi" />
+                <data android:pathPattern="/.*-r42/.*-c.*/services" />
+                <data android:pathPattern="/.*-r42/.*-c.*/a-vendre" />
+                <data android:pathPattern="/.*-r42/.*-c.*/mode" />
+                <data android:pathPattern="/.*-r42/.*-c.*/high-tech" />
+                <data android:pathPattern="/.*-r43/.*-c.*/automobile" />
+                <data android:pathPattern="/.*-r43/.*-c.*/immobilier" />
+                <data android:pathPattern="/.*-r43/.*-c.*/emploi" />
+                <data android:pathPattern="/.*-r43/.*-c.*/services" />
+                <data android:pathPattern="/.*-r43/.*-c.*/a-vendre" />
+                <data android:pathPattern="/.*-r43/.*-c.*/mode" />
+                <data android:pathPattern="/.*-r43/.*-c.*/high-tech" />
+                <data android:pathPattern="/.*-r55/.*-c.*/automobile" />
+                <data android:pathPattern="/.*-r55/.*-c.*/immobilier" />
+                <data android:pathPattern="/.*-r55/.*-c.*/emploi" />
+                <data android:pathPattern="/.*-r55/.*-c.*/services" />
+                <data android:pathPattern="/.*-r55/.*-c.*/a-vendre" />
+                <data android:pathPattern="/.*-r55/.*-c.*/mode" />
+                <data android:pathPattern="/.*-r55/.*-c.*/high-tech" />
+                <data android:pathPattern="/.*-r68/.*-c.*/automobile" />
+                <data android:pathPattern="/.*-r68/.*-c.*/immobilier" />
+                <data android:pathPattern="/.*-r68/.*-c.*/emploi" />
+                <data android:pathPattern="/.*-r68/.*-c.*/services" />
+                <data android:pathPattern="/.*-r68/.*-c.*/a-vendre" />
+                <data android:pathPattern="/.*-r68/.*-c.*/mode" />
+                <data android:pathPattern="/.*-r68/.*-c.*/high-tech" />
+                <data android:pathPattern="/.*-r41/.*-c.*/immobilier" />
+                <data android:pathPattern="/.*-r41/.*-c.*/emploi" />
+                <data android:pathPattern="/.*-r42/.*-c.*/services" />
+                <data android:pathPattern="/.*-r43/.*-c.*/a-vendre" />
+                <data android:pathPattern="/.*-r55/.*-c.*/mode" />
+                <data android:pathPattern="/.*-r68/.*-c.*/high-tech" />
+                <data android:pathPattern="/*/terrains-a-vendre-ou-a-louer" />
+                <data android:pathPattern="/*/maisons-appartements-a-louer" />
+                <data android:pathPattern="/*/bureaux-locaux-commerciaux" />
+                <data android:pathPattern="/*/autres-immobilier" />
+                <data android:pathPattern="/*/maisons-appartements-a-vendre" />
+                <data android:pathPattern="/*/demandes-d-emploi-cvtheque" />
+                <data android:pathPattern="/*/offres-d-emploi" />
+                <data android:pathPattern="/*/habillement-femme" />
+                <data android:pathPattern="/*/accessoires-de-mode" />
+                <data android:pathPattern="/*/habillement-homme" />
+                <data android:pathPattern="/*/autres-articles-de-mode" />
+                <data android:pathPattern="/*/montres-bijoux-lunettes" />
+                <data android:pathPattern="/*/habillement-enfants" />
+                <data android:pathPattern="/*/telephones-tablettes-tactiles" />
+                <data android:pathPattern="/*/ordinateurs" />
+                <data android:pathPattern="/*/autres-high-tech" />
+                <data android:pathPattern="/*/audio-video" />
+                <data android:pathPattern="/*/consoles-jeux-videos" />
+                <data android:pathPattern="/*/voitures" />
+                <data android:pathPattern="/*/autres-automobile" />
+                <data android:pathPattern="/*/pieces-detachees-accessoires" />
+                <data android:pathPattern="/*/motos" />
+                <data android:pathPattern="/*/evenementiel" />
+                <data android:pathPattern="/*/offres-de-service" />
+                <data android:pathPattern="/*/autres-services" />
+                <data android:pathPattern="/*/recherche-de-services" />
+                <data android:pathPattern="/*/autres-a-vendre" />
+                <data android:pathPattern="/*/mobiliers-decoration" />
+                <data android:pathPattern="/*/electromenager" />
+
+            </intent-filter>
+               <!-- &lt;!&ndash;-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                   <data
+                       android:host="preprod.kerawa.com"
+                       android:pathPrefix="/cote-d-ivoire-r43"
+                       android:scheme="http" />
+                   <data
+                       android:host="preprod.kerawa.com"
+                       android:pathPrefix="/cote-divoire-r43"
+                       android:scheme="http" />
+
+
+
+            <!-- =========================================================================================== -->
+
+
+            
+                <data android:pathPrefix="/cameroun-r40" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="preprod.kerawa.com" />
+                <data android:host="www.preprod.kerawa.com" />
+            
+                    <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/cameroun-r40"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cameroun-r40"
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/cameroun-r40"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cameroun-r40"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/automobile"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/automobile"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/automobile"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/automobile"
+                    android:scheme="http" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/immobilier"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/immobilier"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/immobilier"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/immobilier"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/emploi"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/emploi"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/emploi"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/emploi"
+                    android:scheme="http" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cameroun-r40"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/gabon-r68"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/congo-brazza-r41"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cameroun-r40"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/congo-kinshasa-r42"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cote-d-ivoire-r43"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/senegal-r55"
+                    android:scheme="http" />
+
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/mode"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/mode"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/mode"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/mode"
+                    android:scheme="https" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/high-tech"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/high-tech"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/high-tech"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/high-tech"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/a-vendre"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/a-vendre"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/a-vendre"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/a-vendre"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/services"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/services"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*/services"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*/services"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/gabon-r68"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/gabon-r68"
+                    android:scheme="https" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/gabon-r68"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/gabon-r68"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/congo-brazza-r41"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/congo-brazza-r41"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/congo-brazza-r41"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/congo-brazza-r41"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/congo-kinshasa-r42"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/congo-kinshasa-r42"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/congo-kinshasa-r42"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/congo-kinshasa-r42"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cote-d-ivoire-r43"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/cote-d-ivoire-r43"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cote-d-ivoire-r43"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/cote-d-ivoire-r43"
+                    android:scheme="http" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cote-divoire-r43"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/cote-divoire-r43"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cote-divoire-r43"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPrefix="/cote-divoire-r43"
+                    android:scheme="http" />
+            </intent-filter>
+
+            <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:host="preprod.kerawa.com"
+                android:pathPrefix="/senegal-r55"
+                android:scheme="https" />
+            <data
+                android:host="www.preprod.kerawa.com"
+                android:pathPrefix="/senegal-r55"
+                android:scheme="https" />
+            <data
+                android:host="preprod.kerawa.com"
+                android:pathPrefix="/senegal-r55"
+                android:scheme="http" />
+            <data
+                android:host="www.preprod.kerawa.com"
+                android:pathPrefix="/senegal-r55"
+                android:scheme="http" />
+            </intent-filter>
+            
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/gabon-r68"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/congo-brazza-r41"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cameroun-r40"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/congo-kinshasa-r42"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/cote-d-ivoire-r43"
+                    android:scheme="http" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPrefix="/senegal-r55"
+                    android:scheme="http" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- activite permettant de choisir le pays d'origine de l'utilisateur -->
+
+        <activity
+            android:name=".CountryList"
+            android:label="@string/all_counties" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <!-- activite de lancement de l'application -->
+        <activity
+            android:name=".splash"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/KerawaTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- activite affichant les details d'une annonce particuliere -->
+        <activity
+            android:name=".DetailsActivity"
+            android:label="kerawa"
+            android:parentActivityName=".AdsListActivity"
+            android:theme="@style/KerawaTheme" />
+        <activity
+            android:name=".ActivityUserAccount"
+            android:label="Kerawa" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="preprod.kerawa.com" />
+                <data android:host="www.preprod.kerawa.com" />
+                <data android:pathPrefix="/user/profile" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <!-- activite permettant a l'utlisateur de se connecter -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="kerawa"
+            android:parentActivityName=".AdsListActivity"
+            android:theme="@style/KerawaTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+
+
+                <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="preprod.kerawa.com" />
+                <data android:host="www.preprod.kerawa.com" />
+                <data android:pathPrefix="/user/login" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- activite permettant a l'utlisateur de s'enregistrer -->
+        <activity
+            android:name=".RegisterActivity"
+            android:label="kerawa"
+            android:parentActivityName=".AdsListActivity"
+            android:theme="@style/KerawaTheme"
+            android:windowSoftInputMode="adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.LoginActivity" />
+
+            <!-- filtre de reception des sms -->
+            <intent-filter android:priority="100" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="preprod.kerawa.com" />
+                <data android:host="www.preprod.kerawa.com" />
+                <data android:pathPrefix="/user/register" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- activite permettant d'afficher les details du blog -->
+        <activity
+            android:name=".Blog_Activity"
+            android:label="@string/title_activity_blog_"
+            android:parentActivityName=".AdsListActivity"
+            tools:ignore="UnusedAttribute" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="preprod.kerawa.com" />
+                <data android:host="www.preprod.kerawa.com" />
+                <data android:pathPrefix="/blog/a-propos/affiliation/" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".services.ConnectionReciever"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.PostAdsService" />
+        <service android:name=".services.PostImagesService" />
+
+        <!-- activite permettant de creer une annonce -->
+        <activity
+            android:name=".createAdsActivity"
+            android:label="kerawa" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="preprod.kerawa.com" />
+                <data android:host="www.preprod.kerawa.com" />
+                <data android:pathPrefix="/item/new" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".services.AdsDownloader"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".services.updater" />
+
+        <activity
+            android:name=".ActivityUpdater"
+            android:label="kerawa" />
+
+        <receiver
+            android:name=".services.endInstallReciever"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.MetasDownloader"
+            android:exported="false" />
+        <service
+            android:name=".services.ImagesUploaderCron"
+            android:exported="false" />
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.kerawa.dev" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Mes_contacts"
+            android:label="kerawa"
+            android:parentActivityName=".AdsListActivity"
+            android:theme="@style/KerawaTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+        </activity>
+        <activity
+            android:name=".WebPageLoader"
+            android:label="Kerawa"
+            android:theme="@style/KerawaTheme" />
+
+        <service
+            android:name=".services.send_contacts"
+            android:exported="false" />
+        <service
+            android:name=".services.drugstore_updater"
+            android:exported="false" />
+
+        <activity
+            android:name=".utilities.FileExplore"
+            android:label="FileExplorer"
+            android:parentActivityName=".AdsListActivity" />
+        <activity
+            android:name=".DetailsFromShare"
+            android:label="kerawa"
+            android:parentActivityName=".AdsListActivity" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*_.*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*_.*"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/.*_.*"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/.*_.*"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Contact_us"
+            android:label="@string/title_activity_contact_us"
+            android:parentActivityName=".AdsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/contact"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/contact"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/contact"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/contact"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListAdsActivity"
+            android:parentActivityName=".SubCatActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.ListAdsActivity" />
+        </activity>
+        <activity
+            android:name=".Drug_store_list"
+            android:exported="true"
+            android:label="@string/title_activity_drug_store_list"
+            android:parentActivityName=".AdsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+        </activity>
+        <activity
+            android:name=".Health_services"
+            android:label="@string/title_activity_health_services"
+            android:parentActivityName=".AdsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+        </activity>
+
+        <receiver
+            android:name=".parseSdk.ParseReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.kerawa.app.RECEIVE_PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.ChatHeadService"
+            android:exported="false" />
+        <service
+            android:name=".services.delete_files"
+            android:exported="false" />
+        <service
+            android:name=".services.ScreenOnOff"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Affiliation"
+            android:label="@string/title_activity_affiliation"
+            android:parentActivityName=".AdsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/blog/affiliation"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/blog/affiliation"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/blog/affiliation"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/blog/affiliation"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WrongVersion"
+            android:label="@string/title_activity_wrong_version" />
+        <activity android:name=".makeCallorText" />
+        <!-- <receiver android:name=".services.CallDurationReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.NEW_OUTGOING_CALL"/> -->
+        <!-- <action android:name="my_action.string"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity android:name=".ShareAds" />
+        <activity android:name=".AppinviteActivity" />
+        <activity android:name=".TestNotification" />
+        <activity android:name=".SubCatActivity" />
+
+        <!-- Search results activity -->
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/search/.*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/search/.*"
+                    android:scheme="https" />
+                <data
+                    android:host="preprod.kerawa.com"
+                    android:pathPattern="/search/.*"
+                    android:scheme="http" />
+                <data
+                    android:host="www.preprod.kerawa.com"
+                    android:pathPattern="/search/.*"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".deepLinking.DeepActivity"
+            android:label="@string/title_activity_deep_linking"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:parentActivityName=".AdsListActivity"
+            android:theme="@style/Theme.AppCompat" >
+
+            <!-- android:theme="@android:style/Theme.NoDisplay" -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+
+        </activity>
+        <activity
+            android:name=".deepLinking.DeepLinkingActivity"
+            android:label="@string/title_activity_deep_linking"
+            android:parentActivityName=".AdsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+        </activity>
+        <activity
+            android:name=".deepLinking.AdsDeepLinkingActivity"
+            android:label="@string/title_activity_ads_deep_linking" >
+        </activity>
+
+        <!--
+        <service
+            android:name=".services.ParseUpdater"
+            android:exported="false" >
+        </service>
+        -->
+
+
+        <!-- QR CODE SCANNER -->
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name=".QrDetails"
+            android:label="@string/title_activity_qr_details" >
+        </activity>
+        <activity
+            android:name=".VersionActivity"
+            android:label="@string/title_activity_version"
+            android:parentActivityName=".AdsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+            <!-- android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"> -->
+
+        </activity>
+        <activity
+            android:name=".DispatchQRActivity"
+            android:label="@string/title_activity_dispatch_qr"
+            android:parentActivityName=".AdsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kerawa.app.AdsListActivity" />
+        </activity>
+    </application>
+
+</manifest>

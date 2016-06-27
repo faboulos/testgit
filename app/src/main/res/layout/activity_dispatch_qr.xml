@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kerawa.app.DispatchQRActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutParent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layoutTop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="35dp"
+                android:background="#97b3c9">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:src="@drawable/qr_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+<!--
+                <ImageView
+                    android:id="@+id/logo2"
+                    android:src="@mipmap/qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/logo"/>-->
+
+                <TextView
+                    android:id="@+id/title_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QR CODE ET CODE BARRE"
+                    android:layout_below="@id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:shadowColor="#999"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/theme">
+
+
+
+                <TextView
+                    android:id="@+id/slogan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Scanner de Qr codes"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:textColor="#acbed0"/>
+
+                <View
+                    android:id="@+id/separator2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="5dp"
+                    android:background="#edebeb"
+                    android:layout_below="@+id/slogan"/>
+
+                <Button
+                    android:id="@+id/lancerBtn1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/separator2"
+                    android:background="#f9f9f9"
+                    android:text="SCAN 1"
+                    android:textSize="16dp"
+                    android:layout_margin="1dp"
+                    android:textColor="#5fc882"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/lancerBtn2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lancerBtn1"
+                    android:background="#f9f9f9"
+                    android:text="SCAN 2"
+                    android:textSize="16dp"
+                    android:layout_margin="1dp"
+                    android:textColor="#5fc882"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Copyright  KERAWA"
+                android:textColor="#bebdbd"
+                android:textSize="12dp"
+                android:padding="8dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/layoutBottom"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

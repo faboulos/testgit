@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="3dp" >
+
+    <!-- Thumbnail Images -->
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/default8"
+        android:contentDescription="@string/ok"
+        tools:ignore="RtlHardcoded"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#0691E6"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true" />
+
+    <!-- Rating -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/name"
+        android:id="@+id/linearLayout7"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:textColor="@color/text_black_100"
+                android:textSize="14sp"
+                android:textAppearance="@style/Toolbar.TitleText"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:layout_weight="60" />
+
+            <TextView
+                android:id="@+id/region"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:layout_weight="40" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:textSize="10sp"
+            android:textAppearance="@style/Toolbar.TitleText"
+            android:textColor="#555555"
+            android:padding="3dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Toolbar.TitleText"
+            android:text="Medium Text"
+            android:id="@+id/phonelist"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/linearLayout7"
+            android:layout_alignStart="@+id/linearLayout7"
+            android:singleLine="true"
+            android:textColor="@color/blue_kerawa"
+            android:padding="3dp"
+            android:visibility="gone" />
+
+        <GridView
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/phonegrid"
+            android:choiceMode="singleChoice"
+            android:clickable="true"
+            android:columnWidth="45dp"
+            android:numColumns="2"
+            android:horizontalSpacing="2dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/phones_button"
+        android:visibility="gone"
+        android:textAppearance="@style/Toolbar.TitleText"
+        android:textSize="12dp"
+        android:textColor="#222222"
+        android:background="@drawable/ic_pharmacy_call"
+        android:layout_alignEnd="@+id/linearLayout7" />
+
+</RelativeLayout>
+

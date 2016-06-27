@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center" android:weightSum="1"
+            android:orientation="horizontal"
+            android:id="@+id/top"
+            android:visibility="gone">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/liste_villes"
+                android:spinnerMode="dropdown"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:layout_width="0dp"
+                android:text="@string/villes"
+                android:id="@+id/choix_ville"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location"
+                android:onClick="open_cities_list"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/categories"
+                android:id="@+id/choix_de_cat"
+                android:layout_marginTop="0dp"
+                android:drawableLeft="@drawable/ic_categories"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ListView
+            android:clickable="true"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="15dp"
+            android:divider="#f5f5f5"
+            android:drawSelectorOnTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:fastScrollEnabled="false"
+            android:fastScrollAlwaysVisible="false"
+            android:layout_below="@+id/top"
+            android:layout_above="@+id/relativeLayout" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bg_anim"
+            android:background="@android:color/transparent"
+            android:id="@+id/loader"
+            android:layout_marginBottom="-10dp"
+            android:layout_gravity="center"
+            android:layout_above="@+id/footer"
+            android:layout_centerHorizontal="true" />
+
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:gravity="bottom"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#64b5f6">
+            <LinearLayout
+                android:id="@+id/homecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="8">
+                <ImageButton
+                    android:id="@+id/backHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_state"
+                    android:layout_weight="2"
+                    android:src="@mipmap/ic_home"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+                <ImageButton
+                    android:id="@+id/createAds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_state"
+                    android:layout_weight="2"
+                    android:src="@mipmap/ic_ad"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+                <ImageButton
+                    android:id="@+id/searchButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_state"
+                    android:layout_weight="2"
+                    android:src="@mipmap/search_icon"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+                <ImageButton
+                    android:id="@+id/goToProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_state"
+                    android:layout_weight="2"
+                    android:src="@mipmap/ic_whiteprofile"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/homesearchbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:visibility="invisible">
+                <EditText
+                    android:id="@+id/entersearch"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:hint="@string/abc_search_hint"
+                    android:textColorHint="#ffffff"
+                    android:imeOptions="actionSearch"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"/>
+                <ImageButton
+                    android:id="@+id/searchclose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search_icon"
+                    android:layout_weight="3.5"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/button_state"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/no_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible">
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f44336"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="Aucune annonce trouvée"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/offline"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please check your connection and tap the image"
+                android:id="@+id/textView30"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/refresh"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_offline"
+                android:background="@drawable/button_click"
+                android:layout_below="@+id/textView30"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="63dp" />
+        </RelativeLayout>
+
+
+
+    <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:descendantFocusability="beforeDescendants"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:id="@+id/relativeLayout">-->
+
+            <!--&lt;!&ndash;<ImageButton&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text=""&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/okButton"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignBottom="@+id/searchText"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@color/blue_500"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/action_search"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginRight="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentTop="true" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="50dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/searchText"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentTop="false"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentStart="false"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_toLeftOf="@+id/okButton"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_toStartOf="@+id/okButton"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="center_vertical|center_horizontal|fill"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="#ffffffff"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:hint="Rechercher..."&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="3dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_margin="2dp" />&ndash;&gt;-->
+        <!--</RelativeLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+</FrameLayout>

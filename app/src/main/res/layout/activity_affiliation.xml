@@ -1,0 +1,375 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/textView25"
+    android:layout_alignEnd="@+id/textView25"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.kerawa.app.Affiliation">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView4"
+    android:background="@drawable/shape2"
+    android:paddingBottom="5dp"
+    android:layout_above="@+id/parent_adder"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:padding="3dp">
+
+            <TextView
+                android:background="#eeeeee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Toolbar.TitleText"
+                android:text="@string/affiliation_text"
+                android:id="@+id/affiliation_text"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="#222" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/affiliation_link"
+                android:id="@+id/affiliation_link"
+                android:padding="5dp"
+                android:background="#eeeeee"
+                android:layout_below="@+id/affiliation_text"
+                android:textSize="20dp"
+                android:textColor="@color/blue_kerawa"
+                android:gravity="center_vertical" />>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/blue_kerawa"
+                android:layout_below="@+id/affiliation_link"
+                android:id="@+id/divider1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre code Parrain"
+                android:id="@+id/textView26"
+                android:textColor="#222222"
+                android:layout_alignStart="@+id/editText3"
+                android:layout_below="@+id/divider1"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editText3"
+                android:layout_below="@+id/textView26"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/blue_kerawa"
+                android:layout_marginTop="4dp"
+                android:padding="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="#fff"
+                android:textColorHighlight="#fff"
+                android:textColorHint="#fff"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:text="Créer votre compte Parrain"
+                android:gravity="center_vertical|center_horizontal" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/blue_kerawa"
+                android:layout_below="@+id/editText3"
+                android:id="@+id/divider2"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Saisir le code de votre parrain"
+                android:id="@+id/textView25"
+                android:layout_below="@+id/divider3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="4dp"
+                android:textColor="#222222" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/blue_kerawa"
+                android:id="@+id/divider3"
+                android:layout_below="@+id/textView27"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentEnd="false" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/parent_affilation"
+                android:background="@color/blue_kerawa"
+                android:hint="Saisir ici..."
+                android:padding="3dp"
+                android:paddingLeft="5dp"
+                android:lines="1"
+                android:layout_below="@+id/textView25"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nbre de téléchargement(s)"
+                android:id="@+id/textView27"
+                android:textColor="#222222"
+                android:layout_below="@+id/divider2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/refresh_button"
+                android:background="@drawable/button_state"
+                android:src="@drawable/icon_refresh"
+                android:layout_below="@+id/divider2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#dad5da"
+                android:divider="@color/blue_kerawa"
+                android:showDividers="beginning|middle|end"
+                android:padding="3dp"
+                android:id="@+id/task_lister"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Toolbar.TitleText"
+                    android:text="Initialisation"
+                    android:id="@+id/verification"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textColor="#222222"
+                    android:drawableRight="@drawable/more_details" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Toolbar.TitleText"
+                    android:text="Activation  du parrainage"
+                    android:id="@+id/aff_activ"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:textColor="#222222"
+                    android:drawableRight="@drawable/more_details" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Toolbar.TitleText"
+                    android:text="Récupération des informations"
+                    android:id="@+id/infos_loader"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:textColor="#222222"
+                    android:drawableRight="@drawable/more_details" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Toolbar.TitleText"
+                    android:text="Fin de l&apos;opération"
+                    android:id="@+id/done"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:textColor="#222222"
+                    android:drawableRight="@drawable/more_details" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+</ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout11"
+        android:weightSum="100"
+        android:paddingBottom="2dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Devenir parrain"
+            android:id="@+id/participate_text"
+            android:layout_weight="50"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:drawableTop="@drawable/affiliation"
+            android:textColor="#222222"
+            android:autoText="false"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/blue_kerawa"
+            android:id="@+id/dividerx" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ajouter un parrain"
+        android:id="@+id/parent_adder"
+        android:layout_weight="50"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffffff"
+        android:autoText="false"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#7DAF3B"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout style="@style/my_popop"
+        android:id="@+id/the_popop"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:baselineAligned="false"
+            android:layout_centerVertical="true"
+            android:weightSum="100"
+            android:id="@+id/linearLayout9"
+            android:background="@color/blue_kerawa">
+
+            <LinearLayout
+                android:text="@string/warning_text"
+                android:id="@+id/mytext"
+                style="@style/warnin_window"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="80dp"
+                android:weightSum="100"
+                android:background="@color/blue_kerawa"
+                android:layout_below="@+id/textView28">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Annuler"
+                    android:id="@+id/cancel_button"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/Toolbar.TitleText"
+                    android:textSize="18dp"
+                    android:textColor="#555"
+                    android:background="@drawable/shape2"
+                    android:layout_margin="3dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valider"
+                    android:id="@+id/valid_button"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/Toolbar.TitleText"
+                    android:textSize="18dp"
+                    android:textColor="#555"
+                    android:background="@drawable/shape2"
+                    android:layout_margin="3dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Valider le code Parrain"
+            android:id="@+id/textView28"
+            android:textSize="23sp"
+            android:layout_above="@+id/code_taker"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            style="@style/black_blue_text"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/code_taker"
+            android:text="..."
+            style="@style/black_blue_text"
+            android:gravity="center_vertical|center_horizontal" />
+    </RelativeLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/bg_anim"
+        android:background="@android:color/transparent"
+        android:id="@+id/loader"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>
